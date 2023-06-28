@@ -1,0 +1,60 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.form {
+	padding: 60px 67px 59px 68px;
+
+	&__inner {
+		width: 665px;
+		height: 480px;
+		display: flex;
+	}
+
+	&__inner-left {
+		flex: 0 0 137.2px;
+		background-color: $blue;
+		position: relative;
+	}
+
+	&__inner-right {
+		flex: 1 1 auto;
+		background-color: #fff;
+		padding: 41.52px 22px 32.48px 20.8px;
+	}
+
+	&__title {
+		font-family: 'PT Sans', sans-serif;
+		font-size: 49px;
+		letter-spacing: 0.5px;
+		color: #fff;
+		transform: rotate(-180deg);
+		writing-mode: vertical-rl;
+		position: absolute;
+		bottom: 22px;
+		right: 12px;
+	}
+
+	&__subtitle {
+		font-weight: 500;
+		font-size: 22px;
+		letter-spacing: -0.46px;
+		margin: 0 0 2px 0;
+	}
+
+	&__description {
+		font-weight: 300;
+		margin: 0 0 20px 0;
+	}
+
+	&__data {
+		display: flex;
+		column-gap: 13px;
+	}
+
+	&__column {
+		flex: 0 1 50%;
+	}
+}
